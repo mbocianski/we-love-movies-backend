@@ -3,15 +3,6 @@ const knex = require("../db/connection")
 const reduceProperties = require("../utils/reduce-properties")
 
 const movies =reduceProperties("theater_id",{
-    // "theater_id": ["theater", "theater_id"],
-    // "name": ["theater", "name"],
-    // "address_line_1": ["theater", "address_line_1"],
-    // "address_line_2": ["theater", "address_line_2"],
-    // "city": ["theater", "city"],
-    // "state":["theater", "state"],
-    // "zip": ["theater", "zip"],
-    // "created_at": ["theater", "created_at"],
-    // "updated_at": ["theater", "updated_at"],
     "movie_id": ["movies", null, "movie_id"],
     "title": ["movies", null, "title"],
     "rating": ["movies", null, "rating"],
