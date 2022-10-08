@@ -2,6 +2,7 @@ const { json } = require("express/lib/response")
 const knex = require("../db/connection")
 const reduceProperties = require("../utils/reduce-properties")
 
+// configuration for reducePproperties function to list all movie data for a specific theater
 const movies =reduceProperties("theater_id",{
     "movie_id": ["movies", null, "movie_id"],
     "title": ["movies", null, "title"],
@@ -15,6 +16,7 @@ const movies =reduceProperties("theater_id",{
     "theater_id": ["movies", null, "theater_id"]
 })
 
+// theater data that includes which movies are playing
 async function list(){
     return knex ("theaters as t")
         .join("movies_theaters as mt", "mt.theater_id","t.theater_id")

@@ -1,3 +1,5 @@
+//for use with async/await in controllers
+
 function asyncErrorBoundary(delegate, defaultStatus) {
   return (request, response, next) => {
     Promise.resolve()

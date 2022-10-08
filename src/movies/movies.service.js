@@ -1,7 +1,7 @@
 const knex = require("../db/connection")
 const mapProperties = require("../utils/map-properties");
 
-
+// creates an object with key 'critics' and uses relevant data as value
 const addCritic = mapProperties({
     critic_id: "critic.critic_id",
     preferred_name: "critic.preferred_name",
@@ -11,9 +11,12 @@ const addCritic = mapProperties({
     updated_at: "critic.updated_at"
 })
 
+//show all movies
 async function list() {
     return knex("movies").select("*");
 }
+
+// join movie and theater data
 
 async function listInTheaters(){
     return knex("movies as m")
@@ -24,6 +27,8 @@ async function listInTheaters(){
             .distinct()
 }
 
+
+// read speciifc movie data
 async function read(movieId){
     return knex ("movies")
         .select("*")
@@ -31,6 +36,7 @@ async function read(movieId){
         .first();
 }
 
+//list theaters showing specific movie
 async function theaterList(movieId){
     return knex("movies as m")
             .join("movies_theaters as mt", "m.movie_id", "mt.movie_id")
@@ -38,6 +44,8 @@ async function theaterList(movieId){
             .select("t.*")
             .where({"m.movie_id": movieId})   
 }
+
+// list reviews for specific movie
 
 async function reviewList(movieId){
     return knex("reviews as r")

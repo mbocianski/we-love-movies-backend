@@ -1,3 +1,5 @@
+//for adding onto all routes
+
 function methodNotAllowed(req,res,next){
     next({
         status: 405,

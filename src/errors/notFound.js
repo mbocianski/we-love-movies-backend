@@ -1,3 +1,5 @@
+//for routes not found
+
 function notFound (req, res, next){
     const message = {status: 404,
                     message: `Path not found: ${req.originalUrl}`}

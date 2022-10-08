@@ -1,7 +1,7 @@
 const service = require("./reviews.service")
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary")
 
-
+//validates review ID and returns referenced review
 async function reviewIdExists(req,res,next){
     const {reviewId} = req.params;
     const data = await service.list();
@@ -13,11 +13,14 @@ async function reviewIdExists(req,res,next){
     next({status: 404, message: "Review cannot be found"})
 }
 
+//removes review
 async function destroy(req,res){
     const {review_id} = res.locals.review;
     await service.destroy(review_id);
     res.sendStatus(204);
 }
+
+//updates review with body data anbd returns full review and relevant critic data
 
 async function update(req,res){
     const review_id = req.params.reviewId;
