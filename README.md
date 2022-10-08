@@ -20,16 +20,16 @@ Run npm start
 
 ## Endpoints
 
-GET /movies returns list of movies
-GET /movies?is_showing=true returns ilst of movies shwoing in theaters 
-GET /movies/:movieId returns specific movie data
-GET /movies/:movieId/theaters returns list of theaters for specific movie
-GET /movies/:movieId/reviews returns list of reviews for specific movie
+- GET /movies returns list of movies
+- GET /movies?is_showing=true returns ilst of movies shwoing in theaters 
+- GET /movies/:movieId returns specific movie data
+- GET /movies/:movieId/theaters returns list of theaters for specific movie
+- GET /movies/:movieId/reviews returns list of reviews for specific movie
 
-PUT /review/:reviewId updates a review
-DELETE /review/:reviewId deletes a review
+- PUT /review/:reviewId updates a review
+- DELETE /review/:reviewId deletes a review
 
-GET /theaters returns a list of theaters with what movies are playing
+- GET /theaters returns a list of theaters with what movies are playing
 
 ## Learnings
 
