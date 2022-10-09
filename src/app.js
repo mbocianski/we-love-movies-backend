@@ -11,6 +11,8 @@ const notFound = require("./errors/notFound")
 // cors for entire app
 app.use(cors());
 app.use(express.json());
+app.get('/', (req, res) => res.status(301).redirect('/movies'));
+
 
 //three routers
 app.use("/movies", moviesRouter);
