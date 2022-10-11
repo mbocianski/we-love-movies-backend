@@ -12,11 +12,11 @@ Data is stored in URL provdied in .env file.
 - Applied router and controller functions to retrieve a user's specific requests.
 - Technology: Node.js, Express, and Knex. Version control with Git.
 
-## How to View
+## Urls
 
-Fork and clone the repository
-Run npm install
-Run npm start
+Client: https://serene-depths-42609.herokuapp.com/movies/55
+Backend: https://we-love-movies-backend-mab.herokuapp.com/movies
+Client Repo: https://github.com/mbocianski/starter-movie-front-end (Starter Repo for this project).
 
 ## Endpoints
 
