@@ -14,7 +14,7 @@ Data is stored in URL provdied in .env file.
 
 ## Urls
 
-- Client: https://serene-depths-42609.herokuapp.com/movies/55
+- Client: https://serene-depths-42609.herokuapp.com/
 - Backend: https://we-love-movies-backend-mab.herokuapp.com/movies
 - Client Repo: https://github.com/mbocianski/starter-movie-front-end (Starter Repo for this project).
 
