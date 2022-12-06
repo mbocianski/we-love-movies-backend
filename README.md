@@ -2,6 +2,8 @@
 
 This project is the backend for the [We Love Movies Front End](https://github.com/Thinkful-Ed/starter-movie-front-end)
 
+[View Deployed Site](https://we-love-movies-frontend-t2z3.onrender.com)
+
 Highlights include SQL database connected to the app via server. Routes are organized cleanly by functionality for Movies, Review, and Theaters. Error handdling separated out so as to keep app componenet clean.
 Controllers utilize AsyncErrorBoundary for more readable code. Migrations utilize knex and see provided data in the DB file.
 
@@ -14,8 +16,8 @@ Data is stored in URL provdied in .env file.
 
 ## Urls
 
-- Client: https://serene-depths-42609.herokuapp.com/
-- Backend: https://we-love-movies-backend-mab.herokuapp.com/movies
+- Client: https://we-love-movies-frontend-t2z3.onrender.com
+- Backend: https://we-love-movies-backend-8ekl.onrender.com
 - Client Repo: https://github.com/mbocianski/starter-movie-front-end (Starter Repo for this project).
 
 ## Endpoints
